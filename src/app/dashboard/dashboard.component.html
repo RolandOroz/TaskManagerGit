@@ -37,7 +37,7 @@
           >
             NO. OF TEAM MEMBERS
             <span
-              class="badge badge-secondary badge-pill"
+              class="badge bg-secondary"
               style="font-size: 13px"
             >{{ NoOfTeamMembers }}</span
             >
@@ -47,7 +47,7 @@
           >
             TOTAL COST OF ALL PROJECTS
             <span
-              class="badge badge-secondary badge-pill"
+              class="badge bg-secondary"
               style="font-size: 13px"
             >$ {{ TotalCostOfAllProjects }} k</span
             >
@@ -57,7 +57,7 @@
           >
             PENDING TASKS
             <span
-              class="badge badge-secondary badge-pill"
+              class="badge bg-secondary"
               style="font-size: 13px"
             >{{ PendingTasks }}</span
             >
@@ -67,7 +67,7 @@
           >
             UPCOMING PROJECTS
             <span
-              class="badge badge-secondary badge-pill"
+              class="badge bg-secondary"
               style="font-size: 13px"
             >{{ UpComingProjects }}</span
             >
@@ -90,7 +90,7 @@
     </div>
   </div>
 
-<!---->
+<!--MIDDLE SECTION-->
   <div class="col-lg-6">
     <div class="row">
       <div class="col-12 pt-0 pb-2" style="background-color: #e9e6e6">
@@ -201,6 +201,8 @@
       </div>
     </div>
   </div>
+
+  <!--  RIGHT SECTION-->
   <div class="col-lg-3" style="background-color: #e9e6e6">
     <div class="row">
       <div
@@ -211,6 +213,9 @@
       </div>
       <div class="col-lg-12 pt-2">
         <div class="accordion accordion-flush" id="accordionTeamMembers">
+
+  <!-- east starts -->
+
           <div class="accordion-item">
             <div class="card">
               <div class="card-header bg-secondary" id="card1">
@@ -318,144 +323,110 @@
           <!-- south ends -->
 
           <!-- west starts -->
-          <div class="card">
-            <div class="card-header bg-secondary" id="card3">
-              <h2 class="mb-0">
-                <button
-                  class="btn btn-link text-white"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#cardbody3"
-                >
-                  West
-                </button>
-              </h2>
-            </div>
-            <div id="cardbody3" class="collapse" data-parent="#accordion1">
-              <div class="card-body">
-                <table class="table">
-                  <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Status</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Jones</td>
-                    <td><i class="fa fa-user-times"></i> Busy</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Miller</td>
-                    <td><i class="fa fa-phone"></i> Available</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Ford</td>
-                    <td><i class="fa fa-user-times"></i> Busy</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>James</td>
-                    <td><i class="fa fa-phone"></i> Available</td>
-                  </tr>
-                  </tbody>
-                </table>
+          <div class="accordion-item">
+            <div class="card">
+              <div class="card-header bg-secondary" id="card3">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-white collapsed"
+                          type="button" data-bs-toggle="collapse"
+                          data-bs-target="#cardbody3"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTwo">
+                    West
+                  </button>
+                </h2>
+              </div>
+              <div id="cardbody3" class="collapse" data-parent="#accordion3">
+                <div class="card-body">
+                  <table class="table">
+                    <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Ford</td>
+                      <td><i class="fa fa-phone"></i> Available</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Miller</td>
+                      <td><i class="fa fa-phone"></i> Available</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Jones</td>
+                      <td><i class="fa fa-user-times"></i> Busy</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>James</td>
+                      <td><i class="fa fa-user-times"></i> Busy</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
           <!-- west ends -->
 
           <!-- north starts -->
-          <div class="card">
-            <div class="card-header bg-secondary" id="card4">
-              <h2 class="mb-0">
-                <button
-                  class="btn btn-link text-white"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#cardbody4"
-                >
-                  North
-                </button>
-              </h2>
-            </div>
-            <div id="cardbody4" class="collapse" data-parent="#accordion1">
-              <div class="card-body">
-                <table class="table">
-                  <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Status</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Jones</td>
-                    <td><i class="fa fa-user-times"></i> Busy</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Miller</td>
-                    <td><i class="fa fa-phone"></i> Available</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Ford</td>
-                    <td><i class="fa fa-user-times"></i> Busy</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>James</td>
-                    <td><i class="fa fa-phone"></i> Available</td>
-                  </tr>
-                  </tbody>
-                </table>
+          <div class="accordion-item">
+            <div class="card">
+              <div class="card-header bg-secondary" id="card4">
+                <h2 class="mb-0">
+                  <button class="btn btn-link text-white collapsed"
+                          type="button" data-bs-toggle="collapse"
+                          data-bs-target="#cardbody4"
+                          aria-expanded="false"
+                          aria-controls="flush-collapseTwo">
+                    South
+                  </button>
+                </h2>
+              </div>
+              <div id="cardbody4" class="collapse" data-parent="#accordion4">
+                <div class="card-body">
+                  <table class="table">
+                    <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Ford</td>
+                      <td><i class="fa fa-phone"></i> Available</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Miller</td>
+                      <td><i class="fa fa-phone"></i> Available</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Jones</td>
+                      <td><i class="fa fa-user-times"></i> Busy</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>James</td>
+                      <td><i class="fa fa-user-times"></i> Busy</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
           <!-- north ends -->
-
-
-<!--          <div class="accordion accordion-flush" id="accordionFlushExample">-->
-<!--            <div class="accordion-item">-->
-<!--              <h2 class="accordion-header" id="flush-headingOne">-->
-<!--                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">-->
-<!--                  Accordion Item #1-->
-<!--                </button>-->
-<!--              </h2>-->
-<!--              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">-->
-<!--                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="accordion-item">-->
-<!--              <h2 class="accordion-header" id="flush-headingTwo">-->
-<!--                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">-->
-<!--                  Accordion Item #2-->
-<!--                </button>-->
-<!--              </h2>-->
-<!--              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">-->
-<!--                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <div class="accordion-item">-->
-<!--              <h2 class="accordion-header" id="flush-headingThree">-->
-<!--                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">-->
-<!--                  Accordion Item #3-->
-<!--                </button>-->
-<!--              </h2>-->
-<!--              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">-->
-<!--                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-
 
       </div>
     </div>
