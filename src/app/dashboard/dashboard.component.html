@@ -1,4 +1,4 @@
-<nav >
+<nav>
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
     <li class="breadcrumb-item active">Dashboard</li>
@@ -82,13 +82,13 @@
       </div>
       <div class="col-12">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item" *ngFor="let client for Clients">{{client}}</li>
+          <li class="list-group-item" *ngFor="let client of Clients">{{client}}</li>
         </ul>
       </div>
     </div>
   </div>
 
-<!--MIDDLE SECTION-->
+  <!--MIDDLE SECTION-->
   <div class="col-lg-6">
     <div class="row">
       <div class="col-12 pt-0 pb-2" style="background-color: #e9e6e6">
@@ -184,51 +184,57 @@
         TEAM MEMBERS
       </div>
       <div class="col-lg-12 pt-2">
-        <div class="accordion accordion-flush" id="accordion1">
+        <div class="accordion accordion-flush" id="accordionTeamMembers">
 
-  <!-- TeamMembers starts -->
+          <!-- Team Members starts -->
 
-          <div class="accordion-item">
-            <div class="card" *ngFor="let teamMemberGroup of TeamMembers; let i = index">
-              <div class="card-header bg-secondary" id="card1">
-                <h2 class="mb-0">
-                  <button class="btn btn-link text-white collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          [attr.data-target]=" '#cardbody' + i"
-                          aria-expanded="false"
-                          aria-controls="flush-collapseOne">
-                    {{teamMemberGroup.Region}}
-                  </button>
-                </h2>
-              </div>
-              <div [id]="'cardbody' + i" class="collapse" data-bs-parent="#accordion1">
-                <div class="card-body">
-                  <table class="table">
-                    <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>Name</th>
-                      <th>Status</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr *ngFor="let member of teamMemberGroup.Members">
-                      <td>{{member.ID}}</td>
-                      <td>{{member.Name}}</td>
-                      <td><i class="fa fa-phone"> {{member.Status}}</i></td>
-                    </tr>
-                    </tbody>
-                  </table>
+          <div class="accordion accordion-flush" id="accordion1">
+            <div class="accordion-item">
+              <div class="card" *ngFor="let teamMembersGroup of TeamMembers; let i = index">
+                <div class="card-header bg-secondary" id="flush-headingOne">
+
+                  <h2 class="mb-0">
+                    <button class="btn btn-link text-white"
+                            type="button" data-bs-toggle="collapse"
+                            [attr.data-bs-target]="'#cardbody' + i"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                      {{teamMembersGroup.Region}}
+                    </button>
+                  </h2>
+                </div>
+
+                <div [id]="'cardbody' + i"
+                     class="collapse"
+                     aria-labelledby="flush-headingOne"
+                     data-bs-parent="#accordion1">
+                  <div class="card-body">
+                    <table class="table">
+                      <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Status</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr *ngFor="let member of teamMembersGroup.Members">
+                        <td>{{member.ID}}</td>
+                        <td>{{member.Name}}</td>
+                        <td><i class="fa fa-phone"></i> {{member.Status}}</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- TeamMembers ends -->
 
+            <!-- Team Members ends -->
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-</div>
-<li class="list-group-item" *ngFor="let client for Clients">{{client}}</li>
