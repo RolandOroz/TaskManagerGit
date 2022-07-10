@@ -21,6 +21,7 @@ export class DashboardComponent implements OnInit {
   Years: number[] = [];
   TeamMembersSummary = [];
   TeamMembers = [];
+  ToDay = new Date;
 
   ngOnInit() {
     this.Designation = 'Team Leader';
@@ -112,6 +113,7 @@ export class DashboardComponent implements OnInit {
       this.AvailableFunds = 883;
     }
   }
+
 
   showAllMembers($event) {
 
