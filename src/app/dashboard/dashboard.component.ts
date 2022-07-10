@@ -112,4 +112,8 @@ export class DashboardComponent implements OnInit {
       this.AvailableFunds = 883;
     }
   }
+
+  showAllMembers($event) {
+
+  }
 }
