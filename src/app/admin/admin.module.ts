@@ -6,7 +6,6 @@ import {MyProfileComponent} from "./my-profile/my-profile.component";
 import {AppRoutingModule} from "../app-routing.module";
 
 
-
 @NgModule({
   declarations: [
     DashboardComponent,

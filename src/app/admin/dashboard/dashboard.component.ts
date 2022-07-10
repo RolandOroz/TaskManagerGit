@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -60,28 +61,32 @@ export class DashboardComponent implements OnInit {
 
     this.TeamMembers = [
 
-      {Region: "East", Members: [
+      {
+        Region: "East", Members: [
           {ID: 1, Name: "Ford", Status: "Available"},
           {ID: 2, Name: "Miller", Status: "Available"},
           {ID: 3, Name: "Jones", Status: "Busy"},
           {ID: 4, Name: "James", Status: "Busy"},
         ]
       },
-      {Region: "West", Members: [
+      {
+        Region: "West", Members: [
           {ID: 5, Name: "Anna", Status: "Available"},
           {ID: 6, Name: "Jasmine", Status: "Busy"},
           {ID: 7, Name: "Jim", Status: "Available"},
           {ID: 8, Name: "George", Status: "Busy"},
         ]
       },
-      {Region: "South", Members: [
+      {
+        Region: "South", Members: [
           {ID: 9, Name: "Luce", Status: "Available"},
           {ID: 10, Name: "Max", Status: "Available"},
           {ID: 11, Name: "Jacob", Status: "Available"},
           {ID: 12, Name: "Emily", Status: "Busy"},
         ]
       },
-      {Region: "North", Members: [
+      {
+        Region: "North", Members: [
           {ID: 13, Name: "Frank", Status: "Available"},
           {ID: 14, Name: "Megan", Status: "Available"},
           {ID: 15, Name: "Sharon", Status: "Busy"},
@@ -96,18 +101,15 @@ export class DashboardComponent implements OnInit {
       this.ProjectCost = 21113507;
       this.CurrentExpenditure = 96788;
       this.AvailableFunds = 52436;
-    }
-    else if ($event.target.innerHTML == "Project B") {
+    } else if ($event.target.innerHTML == "Project B") {
       this.ProjectCost = 88923;
       this.CurrentExpenditure = 22450;
       this.AvailableFunds = 2640;
-    }
-    else if ($event.target.innerHTML == "Project C") {
+    } else if ($event.target.innerHTML == "Project C") {
       this.ProjectCost = 662183;
       this.CurrentExpenditure = 7721;
       this.AvailableFunds = 9811;
-    }
-    else if ($event.target.innerHTML == "Project D") {
+    } else if ($event.target.innerHTML == "Project D") {
       this.ProjectCost = 928431;
       this.CurrentExpenditure = 562;
       this.AvailableFunds = 883;
