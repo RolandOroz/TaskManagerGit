@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {any} from "codelyzer/util/function";
 
 @Component({
   selector: 'app-dashboard',
@@ -89,5 +88,28 @@ export class DashboardComponent implements OnInit {
         ]
       },
     ]
+  }
+
+  onProjectChange($event) {
+    if ($event.target.innerHTML == "Project A") {
+      this.ProjectCost = 21113507;
+      this.CurrentExpenditure = 96788;
+      this.AvailableFunds = 52436;
+    }
+    else if ($event.target.innerHTML == "Project B") {
+      this.ProjectCost = 88923;
+      this.CurrentExpenditure = 22450;
+      this.AvailableFunds = 2640;
+    }
+    else if ($event.target.innerHTML == "Project C") {
+      this.ProjectCost = 662183;
+      this.CurrentExpenditure = 7721;
+      this.AvailableFunds = 9811;
+    }
+    else if ($event.target.innerHTML == "Project D") {
+      this.ProjectCost = 928431;
+      this.CurrentExpenditure = 562;
+      this.AvailableFunds = 883;
+    }
   }
 }
